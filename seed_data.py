@@ -1,11 +1,4 @@
-"""
-Populates the database with a realistic demo dataset: one IT company's
-project portfolio, a small team with varying workloads, and tasks positioned
-to trigger every part of the pipeline (overload, blocked tasks, near-term
-deadlines, an already-overdue task, etc).
 
-Run:  python -m backend.seed_data
-"""
 from datetime import date, timedelta
 from backend.database import init_db, SessionLocal, Employee, Project, Task
 
